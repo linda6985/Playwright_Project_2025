@@ -2,10 +2,9 @@ import { Page, test } from '@playwright/test';
 
 
 
-test('Search for caron bing ' , async ({ page }) => {
-
+test ('Search for a car on Bing @smoke', async ({ page }) => {
     //declare arraylist for cars
-     //let cars: string[] = ['Toyota', 'Honda', 'Ford', 'BMW', 'Mercedes'];
+    //let cars: string[] = ['Toyota', 'Honda', 'Ford', 'BMW', 'Mercedes'];
     let cars = new Array<string>()
     cars.push('Toyota')
     cars.push('Honda')
@@ -29,4 +28,4 @@ test('Search for caron bing ' , async ({ page }) => {
         let resultsArray = searchResults.split(' ')
         console.log('for cars ' + cars[i] + ': ', resultsArray[1])
     }//end of for loop
-    
+})//end of test 2

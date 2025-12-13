@@ -32,6 +32,8 @@ export default defineConfig({
 
     actionTimeout: 15000, // your time limit for each action like click(), fill() etc.
     screenshot: 'only-on-failure',
+    video: 'on',
+    
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },

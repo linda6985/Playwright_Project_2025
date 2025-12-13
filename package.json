@@ -14,8 +14,9 @@
         "uspsParallelCB": "npx playwright test src/Day3_120225/T1_USPS_Multiple_Tests.spec.ts --headed --workers=4 --project=chromium --project=firefox --reporter=html",
         "weightWatchersTest": "npx playwright test src/Assignment1_110725/Weightwatchers_ArrayAssignment1.spec.ts --headed --workers=1 --project=chromium --project=firefox --project=safari --reporter=html",
         "bingReusable": "npx playwright test src/Day4_120825/bing_search_reusable.spec.ts  --workers=1 --project=chromium --reporter=html",
-        "allTests": "npx playwright test src/*.spec.ts  --workers=1 --project=chromium --reporter=html"
-
+        "allTests": "npx playwright test src/*.spec.ts  --workers=1 --project=chromium --reporter=html",
+        "uspsCartReusable":"npx playwright test --grep @ai src/* --workers=1 --project=chromium --reporter=html",
+        "findProvider":"npx playwright test src/Action_Items/find_a_provider.spec.ts --headed --workers=1 --project=chromium --reporter=html"
 
   },
   "keywords": [],
